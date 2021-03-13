@@ -66,7 +66,7 @@ const Auth = observer(() => {
                                 {/* Checkbox podpiska */}
                                 <div className="mt-1">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></input>
-                                    <label class="form-check-label" for="flexCheckChecked">Согласие на получение пиздюлей</label>
+                                    <label class="form-check-label" for="flexCheckChecked">Согласие на получение рассылки</label>
                                 </div>
                             </div>
                         }
