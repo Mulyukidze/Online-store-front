@@ -4,10 +4,12 @@ node_modules
 
 
 # local env files
+.env
 .env.local
 .env.*.local
 .pnp
 .pnp.js
+.eslintcache
 
 # Log files
 npm-debug.log*
