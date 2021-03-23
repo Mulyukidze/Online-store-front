@@ -15,9 +15,6 @@ export default class Shop extends Component {
         return (
             <>
                 <Slider />
-                
-                
-                
                 <Container>
                     <h2 className="text-center m-4" style={{textAlign: "center", margin: "0px", paddingBottom: "30px", fontSize: "36px", color: "#747577", lineHeight: "30px"}}>
                         Бренд одежды, вдохновлённый этим безумным миром и девичьей силой. Сшито и напечатано вручную.
