@@ -2,14 +2,22 @@ import React, { Component } from 'react';
 import Slider from '../components/Slider';
 import Carousel from 'react-bootstrap/Carousel';
 import { Container, CardDeck, Card, Button } from 'react-bootstrap';
-import pervoeImg from '../assets/maxresdefault.jpg'
-import vtoroeImg from '../assets/strike.jpg'
+import pervoeImg from '../assets/XR.jpg'
+import vtoroeImg from '../assets/11.jpg'
+import tretieImg from '../assets/12.jpg'
+
+function visitCatalog(){
+    window.location='http://localhost:3000/catalog';
+}
 
 export default class Shop extends Component {
     render() {
         return (
             <>
                 <Slider />
+                
+                
+                
                 <Container>
                     <h2 className="text-center m-4" style={{textAlign: "center", margin: "0px", paddingBottom: "30px", fontSize: "36px", color: "#747577", lineHeight: "30px"}}>
                         Бренд одежды, вдохновлённый этим безумным миром и девичьей силой. Сшито и напечатано вручную.
@@ -19,84 +27,43 @@ export default class Shop extends Component {
                         индивидуальностью. Нам нравится удивлять, привнося в этот мир что-то необыкновенное.
                     </h2>
                     <CardDeck className="m-4">
-                        <Card bg="warning" border="success" text="primary">
-                            <Card.Img
+                    <Card bg="success" border="info">
+                            <Card.Img 
                                 variant="top"
                                 src={ pervoeImg }
                             />
                             <Card.Body>
-                                <Card.Title>Developers</Card.Title>
+                                <Card.Title>Apple iPhone XR - 64Gb Red (Красный)</Card.Title>
                                 <Card.Text>
-                                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+                                    Цена: 44690 ₽
                                 </Card.Text>
-                                <Button variant="primary">About team</Button>
+                                <Button onClick={visitCatalog} variant="primary">В магазин!</Button>
                             </Card.Body>
                         </Card>
                         <Card bg="success" border="info">
-                            <Card.Body>
-                                <Card.Title>Developers</Card.Title>
-                                <Card.Text>
-                                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
-                                </Card.Text>
-                                <Button variant="primary">About team</Button>
-                            </Card.Body>
                             <Card.Img 
-                                variant="bottom"
+                                variant="top"
                                 src={ vtoroeImg }
                             />
-                        </Card>
-                        <Card bg="info" border="warning">
-                            <Card.Img 
-                                variant="top"
-                                src={ pervoeImg }
-                            />
                             <Card.Body>
-                                <Card.Title>Developers</Card.Title>
+                                <Card.Title>Apple iPhone 11 - 256Gb Black (Черный)</Card.Title>
                                 <Card.Text>
-                                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+                                    Цена: 68990 ₽
                                 </Card.Text>
-                                <Button variant="primary">About team</Button>
-                            </Card.Body>
-                        </Card>
-                    </CardDeck>
-                    <CardDeck className="m-4">
-                        <Card bg="warning" border="success" text="primary">
-                            <Card.Img
-                                variant="top"
-                                src={ pervoeImg }
-                            />
-                            <Card.Body>
-                                <Card.Title>Developers</Card.Title>
-                                <Card.Text>
-                                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
-                                </Card.Text>
-                                <Button variant="primary">About team</Button>
+                                <Button onClick={visitCatalog} variant="primary">В магазин!</Button>
                             </Card.Body>
                         </Card>
                         <Card bg="success" border="info">
-                            <Card.Body>
-                                <Card.Title>Developers</Card.Title>
-                                <Card.Text>
-                                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
-                                </Card.Text>
-                                <Button variant="primary">About team</Button>
-                            </Card.Body>
-                            <Card.Img 
-                                variant="bottom"
-                                src={ vtoroeImg }
-                            />
-                        </Card>
-                        <Card bg="info" border="warning">
                             <Card.Img 
                                 variant="top"
-                                src={ pervoeImg }
+                                src={ tretieImg }
                             />
                             <Card.Body>
-                                <Card.Title>Developers</Card.Title>
+                                <Card.Title>Apple iPhone 12 - 128Gb White (Белый)</Card.Title>
                                 <Card.Text>
-                                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+                                    Цена: 73890 ₽
                                 </Card.Text>
-                                <Button variant="primary">About team</Button>
+                                <Button onClick={visitCatalog} variant="primary">В магазин!</Button>
                             </Card.Body>
                         </Card>
                     </CardDeck>
