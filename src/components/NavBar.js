@@ -1,4 +1,3 @@
-
 import React, {useContext} from 'react';
 import {Context} from "../index";
 import Navbar from "react-bootstrap/Navbar";
@@ -10,13 +9,16 @@ import logo from '../assets/logo.png';
 import {observer} from "mobx-react-lite";
 import Container from "react-bootstrap/Container";
 import {useHistory} from 'react-router-dom'
+import {removeToken} from "../http/userAPI";
+
 const NavBar = observer(() => {
     const {user} = useContext(Context)
     const history = useHistory()
-
+    //Button exit
     const logOut = () => {
         user.setUser({})
         user.setIsAuth(false)
+        removeToken()
     }
 
     return (
