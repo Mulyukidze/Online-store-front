@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Button, Container } from 'react-bootstrap'
 import axios from "axios";
-import {SHOP_ROUTE} from "../utils/consts";
 
 export default class Contact extends Component {
     constructor(props) {
@@ -12,10 +11,10 @@ export default class Contact extends Component {
         };
       }
     emailtostate(e){
-        this.state.email = e.target.value
+        this.setState.state.email = e.target.value
     }
     texttostate(e){
-        this.state.text = e.target.value
+        this.setState.text = e.target.value
     }
     clickbutton(e){
         let text = this.state.text
