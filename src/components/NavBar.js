@@ -43,7 +43,11 @@ const NavBar = observer(() => {
                         placeholder="Search"
                         className="mr-sm-2"
                     />
-                    <Button variant="outline-info">Search</Button>
+                    <Button
+                        variant="outline-info"
+                        onClick={e => searchDevice}
+                    >Search
+                    </Button>
                 </Form>
                 {user.isAuth ?
                     <Nav className="ml-auto" style={{color: 'white'}}>

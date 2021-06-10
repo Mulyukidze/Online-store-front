@@ -21,7 +21,7 @@ const Catalog = observer(() => {
     //         device.setDevices(data.rows),
     //         device.setTotalCount(data.count)
     //     })
-     }, [])
+    }, [])
 
     useEffect(() => {
         fetchDevices(device.selectedType.id, device.selectedBrand.id, device.page, 8, ordersprice).then(data => {
