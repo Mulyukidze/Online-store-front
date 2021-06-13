@@ -45,7 +45,6 @@ const NavBar = observer(() => {
                     />
                     <Button
                         variant="outline-info"
-                        onClick={e => searchDevice}
                     >Search
                     </Button>
                 </Form>

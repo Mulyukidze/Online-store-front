@@ -35,6 +35,7 @@ const DevicePage = () => {
                         style={{width: 300, height: 300, fontSize: 32, border: '5px solid lightgray'}}
                     >
                         <h3>От: {device.price} руб.</h3>
+                        <h3>Осталось: {device.amount} шт.</h3>
                         <Button variant={"success"}>Добавить в корзину</Button>
                     </Card>
                 </Col>

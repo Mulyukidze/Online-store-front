@@ -8,7 +8,8 @@ import {observer} from "mobx-react-lite";
 const CreateDevice = observer(({show, onHide}) => {
     const {device} = useContext(Context)
     const [name, setName] = useState('')
-    const [price, setPrice] = useState(0)
+    const [price, setPrice] = useState('')
+    const [amount, setAmount] = useState('')
     const [file, setFile] = useState(null)
     const [info, setInfo] = useState([])
 
@@ -35,6 +36,7 @@ const CreateDevice = observer(({show, onHide}) => {
         const formData = new FormData()
         formData.append('name', name)
         formData.append('price', `${price}`)
+        formData.append('amount', `${amount}`)
         formData.append('img', file)
         formData.append('brandId', device.selectedBrand.id)
         formData.append('typeId', device.selectedType.id)
@@ -92,6 +94,13 @@ const CreateDevice = observer(({show, onHide}) => {
                         onChange={e => setPrice(Number(e.target.value))}
                         className="mt-3"
                         placeholder="Введите стоимость устройства"
+                        type="number"
+                    />
+                    <Form.Control
+                        value={amount}
+                        onChange={e => setAmount(Number(e.target.value))}
+                        className="mt-3"
+                        placeholder="Введите остаток"
                         type="number"
                     />
                     <Form.Control
